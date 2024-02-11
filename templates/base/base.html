@@ -46,9 +46,9 @@ width:190px !important;
             <div class="collapsible-body">
               <ul>
                {% if not request.session.username %}
-      <li><a href="/user/login" class="blue-text"><i class="material-icons left red-text text-lighten-2">person</i> Customer</a></li>
+      <li><a href="/user/login" class="blue-text"><i class="material-icons left red-text text-lighten-2">person</i> Student</a></li>
     <li class="divider" tabindex="-1"></li>
-    <li><a href="/manager/login1" class="blue-text"><i class="material-icons left red-text text-lighten-2">room_service</i> Room Manager</a></li>
+    <li><a href="/manager/login1" class="blue-text"><i class="material-icons left red-text text-lighten-2">room_service</i> Hostel Manager</a></li>
   {% else %}
    {% if request.session.type == 'customer' %}
         <li><a href="/user/dashboard"><i class="material-icons left red-text text-lighten-2">dashboard</i> Dashboard</a></li>
